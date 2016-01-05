@@ -1,0 +1,17 @@
+<div ng-app="formApp" ng-controller="formController">
+	<div style="width:50%">
+		<h1>Productos</h1>
+		<div class="row" ng-repeat="producto in productos">
+			<span class='col-md-4'>{{producto.id}}</span>
+			<span class='col-md-4'>{{producto.nombre}}</span>
+			<span class='col-md-4'>${{producto.precio}}</span>
+		</div>
+	</div>
+	<label for="cantidad">Cantidad:</label>
+	<input ng-model="compra.cantidad" name="cantidad" id="cantidad" type="text">
+	<br>
+	<label for="costo">Costo: $</label>
+	<input ng-model="compra.costo" name="costo" id="costo" type="text">
+
+	<h1>Total: ${{compra.cantidad * compra.costo}}</h1>
+</div>
