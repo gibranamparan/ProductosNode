@@ -1,11 +1,13 @@
-angular.module('formApp',[]).controller('formController',['$scope','$http',
-function($scope,$http){
+var app = angular.module('formApp',[]);
+
+app.controller('formController',['$scope','$http', function($scope,$http){
 	$scope.compra={
 		cantidad:10,
 		costo:1
 	};
 
 	getProductos();
+
 	//Se toman los datos del server a través de 
 	//comunicacion por sockets.
 	function getProductos(){
@@ -14,7 +16,7 @@ function($scope,$http){
 			$scope.$apply();
 		});
 	}
-
+	
 	/*Se detecta algun cambio en la BD sobre cierta entidad 
 	especificada y se ejecuta un evento*/
 	io.socket.on('productos', function(event){
