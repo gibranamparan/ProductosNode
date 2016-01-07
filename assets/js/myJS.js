@@ -1,7 +1,7 @@
 var app = angular.module('formApp',[]);
 
 app.controller('formController', function($scope){
-	$scope.compra={
+	/*$scope.compra={
 		cantidad:10,
 		costo:1
 	};
@@ -15,6 +15,6 @@ app.controller('formController', function($scope){
 			$scope.productos = data;
 			$scope.$apply();
 		});
-	}
+	}*/
 	
 });
