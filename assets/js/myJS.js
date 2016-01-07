@@ -1,6 +1,6 @@
 var app = angular.module('formApp',[]);
 
-app.controller('formController',['$scope','$http', function($scope,$http){
+app.controller('formController', function($scope){
 	$scope.compra={
 		cantidad:10,
 		costo:1
@@ -16,7 +16,7 @@ app.controller('formController',['$scope','$http', function($scope,$http){
 			$scope.$apply();
 		});
 	}
-	
+
 	/*Se detecta algun cambio en la BD sobre cierta entidad 
 	especificada y se ejecuta un evento*/
 	io.socket.on('productos', function(event){
@@ -28,4 +28,4 @@ app.controller('formController',['$scope','$http', function($scope,$http){
 			getProductos();
 		}
 	});
-}]);
+});
