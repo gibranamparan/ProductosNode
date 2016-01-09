@@ -1,6 +1,6 @@
-var app = angular.module('formApp',[]);
+angular.module('formApp',[]);
 
-app.controller('formController', function($scope){
+angular.module('formApp',[]).controller('formController', ['$scope',function($scope){
 
 	getProductos();
 
@@ -13,4 +13,4 @@ app.controller('formController', function($scope){
 		});
 	}
 	
-});
+}]);
