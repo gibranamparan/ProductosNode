@@ -1,7 +1,6 @@
 var app = angular.module('formApp',[]);
-
-app.controller('formController', ['$scope',function($scope){
-
+//app.controller('formController', ['$scope',function($scope){
+app.controller('formController', function($scope){
 	//getProductos();
 
 	//Se toman los datos del server a través de 
@@ -16,7 +15,7 @@ app.controller('formController', ['$scope',function($scope){
 	}*/
 	$scope.productos = 'Unos productos';
 	
-}]);
+});
 
 /*app.controller('mainController', ['$scope', '$http', function($scope) {
     $scope.message = 'HOORAY!'; 
