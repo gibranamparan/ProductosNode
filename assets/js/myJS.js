@@ -1,6 +1,6 @@
-angular.module('formApp',[]);
+var app = angular.module('formApp',[]);
 
-angular.module('formApp').controller('formController', ['$scope',function($scope){
+app.controller('formController', ['$scope',function($scope){
 
 	getProductos();
 
@@ -8,7 +8,9 @@ angular.module('formApp').controller('formController', ['$scope',function($scope
 	//comunicacion por sockets.
 	function getProductos(){
 		io.socket.get('/productos', function(data){
-			$scope.productos = data;
+			//$scope.productos = data;
+			//$scope.$apply();
+			$scope.productos = 'Unos productos';
 			$scope.$apply();
 		});
 	}
