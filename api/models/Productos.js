@@ -9,6 +9,18 @@ module.exports = {
 
   attributes: {
 
+	id:{
+		type: "integer"
+	},
+	
+	nombre:{
+		type: "string"
+	},
+	
+	precio:{
+		type: "number"
+	}
+
   }
 };
 
