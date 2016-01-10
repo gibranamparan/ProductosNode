@@ -18,7 +18,7 @@ module.exports = {
 	},
 	
 	precio:{
-		type: "number"
+		type: "string"
 	}
 
   }
