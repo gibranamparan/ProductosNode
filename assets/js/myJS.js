@@ -1,6 +1,6 @@
 angular.module('formApp',[]);
 
-angular.module('formApp',[]).controller('formController', ['$scope',function($scope){
+angular.module('formApp').controller('formController', ['$scope',function($scope){
 
 	getProductos();
 
