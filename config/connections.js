@@ -68,7 +68,7 @@ module.exports.connections = {
   //Production test MONGO Server
   ProductionMongoDB: {
     adapter: 'sails-mongo',
-    url: 'mongodb://heroku_zfhn8zbz:s02e9jlpiv9r7knsc74of4futq@ds039135.mongolab.com:39135/heroku_zfhn8zbz',
+    url: process.env.MONGOLAB_URI,
     // user: 'username',
     // password: 'password',
     // database: 'your_mongo_db_name_here'
