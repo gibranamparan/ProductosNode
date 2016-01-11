@@ -7,12 +7,7 @@
 
 module.exports = {
 
-  attributes: {
-
-	id:{
-		type: "string"
-	},
-	
+  attributes: {	
 	nombre:{
 		type: "string"
 	},
