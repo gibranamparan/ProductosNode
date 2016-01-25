@@ -51,12 +51,13 @@ module.exports.session = {
   *                                                                          *
   *                                                                          *
   ***************************************************************************/
-
-  // host: 'localhost',
-  // port: 6379,
+  //redis://redistogo:2f89b3b1d54cb520e4d55d273917096f@panga.redistogo.com:10040/
+  host: 'panga.redistogo.com',
+  port: 10040,
+  user:'redistogo',
+  pass: '2f89b3b1d54cb520e4d55d273917096f',
   // ttl: <redis session TTL in seconds>,
   // db: 0,
-  // pass: <redis auth password>,
   // prefix: 'sess:',
 
 
