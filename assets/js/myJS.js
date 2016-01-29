@@ -14,7 +14,7 @@ app.controller('formController', ['$scope',function($scope){
 	
 	/*Se detecta algun cambio en la BD sobre cierta entidad 
 	especificada y se ejecuta un evento*/
-	io.socket.on('productos', function(event){
+	io.socket.on('productos/', function(event){
 		if(event.verb == 'created'){
 			$scope.productos.push(event.data);
 			$scope.$apply();

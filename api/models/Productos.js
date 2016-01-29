@@ -13,9 +13,13 @@ module.exports = {
 	},
 	
 	precio:{
-		type: "string"
-	}
+		type: "float"
+	},
 
+	proveedor:{
+		type:'string'
+		//model:'Proveedores'
+	}
   }
 };
 

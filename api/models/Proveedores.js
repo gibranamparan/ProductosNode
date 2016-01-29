@@ -9,6 +9,14 @@ module.exports = {
 
   attributes: {
 
+  	nombre:{type:"string"},
+
+  	productosQueVende:{
+		type:'json'
+  		/*collection:"Productos",
+  		via:"proveedor"*/
+  	},
+
   }
 };
 

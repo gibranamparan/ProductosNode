@@ -34,7 +34,17 @@ module.exports.routes = {
 
   '/': {
     view: 'inicio'
-  }
+  },
+
+  'GET /proveedores/:NombreProveedor':{
+    controller: "ProveedoresController",
+    action: "findOne",
+  },
+
+  'GET /productos/:id/asociarConProveedor':{
+     controller:'ProductosController',
+     action:'asociarConProveedor',
+   }
 
   /***************************************************************************
   *                                                                          *

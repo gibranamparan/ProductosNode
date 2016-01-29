@@ -1,10 +1,17 @@
-<div ng-app="formApp" ng-controller="formController" style="width:50%">
+<div ng-app="formApp" ng-controller="formController" style="width:60%">
 
 	<h1>Productos</h1>
-	<div class="row" ng-repeat="producto in productos">
-		<span class='col-md-4'>{{producto.id}}</span>
+	<!-- FILTRO DE PRODUCTOS POR PROVEEDOR -->
+	<h2><strong>Proveedor:</strong> <%= proveedor.nombre %></h2>
+	<!--<h2>Proveedor: {{proveedor.name}}</h2>-->
+	<!-- <div class="row" ng-repeat="producto in productos">
+		<span class='col-md-5'>{{producto.id}}</span>
 		<span class='col-md-4'>{{producto.nombre}}</span>
-		<span class='col-md-4'>${{producto.precio}}</span>
+		<span class='col-md-3'>${{producto.precio}}</span>
+	</div> -->
+	<div class="row" >
+		<% _.each(productos, function(producto){%>
+			<li><%= producto.nombre %></li>
+		<%	}) %>
 	</div>
-
 </div>
